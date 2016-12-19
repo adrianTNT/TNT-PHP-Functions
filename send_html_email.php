@@ -41,6 +41,6 @@ if(!function_exists("tnt_multipart_mail")){
 // replace "receiver@example.com" with the name of your receiver
 // replace "Sender Name <sender@example.com>" with your name and email, you can also just use email without name
 // replace the content of the plain text and html part of the email
-tnt_multipart_mail("receiver@example.com", "testing html email", "hello (this is plain text)", "<strong>Hello (this is html)</strong>", "Sender Name <sender@example.com>");
+tnt_multipart_mail("receiver@example.com", "testing html email", "hello (this is plain text)", "Hello <strong>(this is html)</strong>", "Sender Name <sender@example.com>");
 
 ?>

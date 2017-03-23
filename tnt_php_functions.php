@@ -197,7 +197,7 @@ if(!function_exists("timestamp_to_ago")){
 		}
 	}
 }
-// echo ago(1482124507);
+// echo timestamp_to_ago(1482124507);
 
 
 ?>

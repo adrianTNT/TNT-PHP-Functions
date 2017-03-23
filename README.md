@@ -6,6 +6,8 @@ Many of them might need work, so feel free to improve/comment/etc.
 
 Thanks. 
 
-Make an array of values and post them to given URL, get reply like with get_url();
+Make an array of values and post them to given URL, get reply like with <code>get_url();</code>
 
-  tnt_post_url('script.php', $post_data_array);
+<code>tnt_post_url('script.php', $post_data_array);</code>
+  
+  

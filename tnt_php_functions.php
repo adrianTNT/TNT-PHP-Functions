@@ -1,9 +1,20 @@
 
 <?php
 
-if(!function_exists("do_post_request")){
+
+/*
+This is like getting url contents by get_url() but instead it gets the reply when posting variables to that URL 
+like using form POST over GET
+make an array of variables, then post them
+
+$post_data_array['first_name'] = 'John';
+$post_data_array['last_name'] = 'Smith';
+
+echo tnt_post_url('script.php', $post_data_array);
+*/
+if(!function_exists("tnt_post_url")){
 	
-	function do_post_request($post_url, $post_data_array){
+	function tnt_post_url($post_url, $post_data_array){
 	
 		// use key 'http' even if you send the request to https://...
 		$post_options = array(
@@ -25,10 +36,5 @@ if(!function_exists("do_post_request")){
 	}
 }
 
-/*		
-$post_data_array['var1'] = 'sadkldak';
-$post_data_array['var2'] = 'sadkldak';
-
-echo do_post_request('http://www.adriantnt.com/demos/_ajax-contact-form/x_post.php', $post_data_array);
 
 ?>

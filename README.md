@@ -6,6 +6,18 @@ Many of them might need work, so feel free to improve/comment/etc.
 
 Thanks. 
 
+<h2>Usage</h2>
+
+Download tnt_php_functions.php and include it in your php file with:
+
+<code><?php include("tnt_php_functions.php");?></code>
+
+Then inside your call any of the included functions:
+
+<code><?php remove_var_from_url("a", "script.php?a=1&b=2");?></code>
+
+(will return `script.php?a=1&b=2`).
+
 <h2>Functions list</h2>
 
 Make an array of values and post them to given URL, get reply like with <code>get_url();</code>

@@ -16,7 +16,7 @@ Then inside your call any of the included functions:
 
 <code>remove_var_from_url("a", "script.php?a=1&b=2");</code>
 
-(will return `script.php?a=1&b=2`).
+(will return `script.php?b=2`).
 
 <h2>Functions list</h2>
 

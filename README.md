@@ -4,4 +4,8 @@ While working on different personal websites I noticed that I always need same k
 
 Many of them might need work, so feel free to improve/comment/etc.
 
-Thanks.
+Thanks. 
+
+Make an array of values and post them to given URL, get reply like with get_url();
+
+  tnt_post_url('script.php', $post_data_array);

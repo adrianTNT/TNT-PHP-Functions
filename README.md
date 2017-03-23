@@ -15,4 +15,7 @@ Make an array of values and post them to given URL, get reply like with <code>ge
 Add a variable to an URL (that might already contain this or other variables)
 <code>add_var_to_url($variable_name,$variable_value,$url_string);</code>
 
+Print a time like "10 seconds ago", "3 days ago", "2 years ago" out of a timestamp like 1490279856
+<code>timestamp_to_ago(1490279856);?></code>
+
 

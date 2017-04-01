@@ -1,6 +1,24 @@
 
 <?php
 
+// function to time how long an operation takes, returns a number like 0.120 (seconds)
+// timer('name'), do operation, timer('name'), print($timer);
+if(!function_exists("timer")){
+	function timer($timer_name){
+		global $timer, $timer_start, $is_admin;
+		if(!isset($timer_start[$timer_name])){
+			$timer_start[$timer_name] = microtime(true);
+		} else {
+			
+			// define a precision (decimals) because deducting two numbers with many decimals woult result in error (123E-somethig)
+			// specify '.' separator and blank '' thousands separator to avoid comparing strings like "1,490,891,288.942" instead of number 1490891288.942
+			$timer[$timer_name] = (number_format(microtime(true), 6, '.', '') - number_format($timer_start[$timer_name], 6, '.', ''));
+			// format final result
+			$timer[$timer_name] = (number_format($timer[$timer_name], 3, '.', ''));
+
+		}
+	}
+}
 
 if(!function_exists("add_var_to_url")){
 	function add_var_to_url($variable_name,$variable_value,$url_string){

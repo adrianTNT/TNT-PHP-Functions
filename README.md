@@ -37,7 +37,7 @@ Print a time like "10 seconds ago", "3 days ago", "2 years ago" out of a timesta
 Time how long different operations took on your website, get a timer for each, output is an array of all timers you used. 
 Note that you can define more than one timer in your code, how long it takes to load users from db, how long it takes to then loop over an array of users, etc.
 
-```
+```php
 // start a timer
 timer("my db query");
 

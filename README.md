@@ -40,7 +40,9 @@ Note that you can define more than one timer in your code, how long it takes to 
 ```
 // start a timer
 timer("my db query");
+
 // put some code here that loads users from database
+
 // call again to stop a timer
 timer("my db query"); 
 

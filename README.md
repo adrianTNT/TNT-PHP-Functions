@@ -32,13 +32,12 @@ Print a time like "10 seconds ago", "3 days ago", "2 years ago" out of a timesta
 
 Time how long different operations took on your website, get a timer for each, output is an array of all timers you used:
 ```
-timer("loading users from database"); // starts timer
+timer("my db query"); // starts timer
 // put some code here that loads users from database
-timer("loading users from database"); // stops timer
-print_r($timer); 
-// or 
-echo $timer["loading users from database"];
-// prints total seconds: "0.123"
+timer("my db query"); // stops timer
+
+// prints total seconds: 0.123
+echo $timer["my db query"];
 ```
 
 

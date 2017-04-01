@@ -8,7 +8,7 @@ Thanks.
 
 <h2>Usage</h2>
 
-Download tnt_php_functions.php and include it in your php file with:
+Download file tnt_php_functions.php and include it in your php file with:
 
 <code>include("tnt_php_functions.php");</code>
 

@@ -34,7 +34,7 @@ Print a time like "10 seconds ago", "3 days ago", "2 years ago" out of a timesta
 <code>timestamp_to_ago(1490279856);</code>
 
 <h3>See how long it took to execute any part of your code</h3>
-Time how long different operations took on your website, get a timer for each, output is an array of all timers you used. 
+Time how long different operations took on your website/script, get a timer for each, output is an array of all timers you used. 
 Note that you can define more than one timer in your code, how long it takes to load users from db, how long it takes to then loop over an array of users, etc.
 
 ```php

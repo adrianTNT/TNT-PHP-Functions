@@ -29,10 +29,13 @@ Make an array of values and post them to given URL, get reply like with <code>ge
 Add a variable to an URL (that might already contain this or other variables)
 <code>add_var_to_url($variable_name,$variable_value,$url_string);</code>
 
+<h3>Print time difference like "2 days ago"</h3>
 Print a time like "10 seconds ago", "3 days ago", "2 years ago" out of a timestamp like 1490279856
 <code>timestamp_to_ago(1490279856);</code>
 
-Time how long different operations took on your website, get a timer for each, output is an array of all timers you used:
+<h3>See how long it took to execute any part of your code</h3>
+Time how long different operations took on your website, get a timer for each, output is an array of all timers you used. 
+Note that you can define more than one timer in your code, how long it takes to load users from db, how long it takes to then loop over an array of users, etc.
 ```
 // start a timer
 timer("my db query");

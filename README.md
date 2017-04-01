@@ -30,4 +30,16 @@ Add a variable to an URL (that might already contain this or other variables)
 Print a time like "10 seconds ago", "3 days ago", "2 years ago" out of a timestamp like 1490279856
 <code>timestamp_to_ago(1490279856);</code>
 
+Time how long different operations took on your website, get a timer for each, output is an array of all timers you used:
+<code>
+timer("loading users from database"); // starts timer
+// put some code here that loads users from database
+timer("loading users from database"); // stops timer
+print_r($timer); 
+// or 
+echo $timer["loading users from database"];
+// prints total seconds: "0.123"
+</code>
+
+
 

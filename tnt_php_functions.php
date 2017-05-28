@@ -3,7 +3,6 @@
 
 
 // a function that tests if computer is connected to internet, returns true/false
-// try to open a connection, 
 // example can be a domain and port 80, or google dns 8.8.8.8 and port 53 (dns)
 // timeout of 5 seems to timeout in 10, maybe some cumulated connection procedures
 if(!function_exists("is_connected")){

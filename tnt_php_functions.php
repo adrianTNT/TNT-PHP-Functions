@@ -13,7 +13,7 @@ if(!function_exists("is_connected")){
 		
 		if($connection){
 			$is_connected = true; 
-			fclose($connected);
+			fclose($connection);
 		}else{
 			$is_connected = false; 
 		}
